@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Vertical Lite client - by rigwild</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="description" content="Vertical app lite client. Watch video without downloading the app !" />
+	<meta name="keywords" content="app, vertical, appvertical, rigwild, github" />
+	<meta name="author" content="Antoine SAUVAGE - rigwild">
+
+	<link rel="icon" href="img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./font/Poppins/stylesheet.css" />
+</head>
+<body>
+	<div class="container">
+		<a href="index.html" class="goHomePage">Back to homepage</a>
+
+		<h1>
+			Vertical Lite client
+			<span class="rigwild"> by rigwild -
+				<a href="https://github.com/rigwild/appVertical-lite-client" target="_blank">
+					Github
+				</a>
+			</span>
+		</h1>
+
+		<div class="watchThumbnail">
+			<img id="watchThumbnailImg" />
+		</div>
+		<div class="watchInfos">
+			<span class="watchTitle" id="seriesLocation"></span>
+			<span class="watchAuthor">
+				by <span id="author"></span> - Duration : <span id="duration"></span> - <span id="likesCount"></span> likes and <span id="commentsCount"></span> comments
+			</span>
+			<span class="watchDescription">
+				Description : <span id="description"></span>
+			</span>
+			<div class="watchVideo">
+				<video controls id="player">
+					<source id="video" src="" type="video/mp4"></source>
+				</video>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		$(document).ready(() => {
+			setupGetWatch(user, pass)
+		})
+	</script>
+</body>
+</html>
