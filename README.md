@@ -6,7 +6,7 @@ Nothing is hosted on your web server, you just retrieve data remotely from Verti
 PHP version is available here : [https://github.com/rigwild/appVertical-lite-client-PHP](https://github.com/rigwild/appVertical-lite-client-PHP)
 
 ## Configuration
-Mody these lines in script.js with your account details. A test account is already there, please don't change its password.
+Modify these lines in script.js with your account details. A test account is already there, please don't change its password.
 ```
 /*Login details to change*/
 const user = "testazerty"
